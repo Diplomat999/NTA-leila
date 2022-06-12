@@ -101,12 +101,6 @@ body {
     height: 100%;
 }
 
-
-.navbar-container {
-    width: 90%;
-    margin: auto;
-}
-
 .header-navbar {
     background-color: transparent;
     border-color: transparent;
@@ -137,7 +131,7 @@ header#header .navbar-default .navbar-nav>li>a {
 }
 
 .title-container {
-    width: 46%;
+    width: 60%;
     margin: 100px auto 0;
 }
 
@@ -152,7 +146,7 @@ header#header .navbar-default .navbar-nav>li>a {
 }
 
 .header-search {
-    width: 33%;
+    width: 40%;
     margin: 50px auto 0 auto;
 }
 
@@ -177,7 +171,7 @@ header#header .navbar-default .navbar-nav>li>a {
 }
 
 .header-user {
-    width: 19%;
+    width: 300px;
     margin: 80px auto 0;
 }
 
@@ -201,7 +195,7 @@ header#header .navbar-default .navbar-nav>li>a {
 .user-left img {
     position: absolute;
     width: 60px;
-    top: 2.5px;
+    top: 0;
     left: -35px;
 }
 
@@ -213,7 +207,7 @@ header#header .navbar-default .navbar-nav>li>a {
 .user-right img {
     position: absolute;
     width: 60px;
-    top: 2.5px;
+    top: 0;
     right: -35px;
 }
 
@@ -231,12 +225,13 @@ header#header .navbar-default .navbar-nav>li>a {
 }
 
 .analyze-content {
-    padding: 0px 55px;
+    padding: 0px 30px;
 }
 
 .title-content {
     position: relative;
     font-size: 30px;
+    width: 80%;
 }
 
 .title-content-line {
@@ -250,11 +245,11 @@ header#header .navbar-default .navbar-nav>li>a {
     width: 100%;
 }
 
-.analyze-content p,
-.tips-content p {
+.analyze-content p {
     padding: 20px 0 0 0;
     margin: 0 0 15px;
     color: gray;
+    width: 80%;
 }
 
 .analyze-content a {
@@ -271,7 +266,6 @@ header#header .navbar-default .navbar-nav>li>a {
 
 .external {
     float: left;
-    border-right: 2px solid lightgray;
     width: 50%;
     box-sizing: border-box;
 }
@@ -286,6 +280,8 @@ header#header .navbar-default .navbar-nav>li>a {
     float: right;
     width: 50%;
     padding: 0 0 0 10px;
+    border-left: 2px solid lightgray;
+    box-sizing: border-box;
 }
 
 .external p,
@@ -335,12 +331,21 @@ header#header .navbar-default .navbar-nav>li>a {
 }
 
 .tips-content {
-    padding: 0px 72px;
+    padding: 0px 30px;
 }
 
+.title-content-tips {
+    width: 75%;
+}
+
+.tips-content p {
+    padding: 20px 0 0 0;
+    margin: 0 0 15px;
+    color: gray;
+}
 
 .competitive-header-container {
-    width: 40%;
+    width: 350px;
     margin: auto;
 }
 
@@ -362,13 +367,14 @@ header#header .navbar-default .navbar-nav>li>a {
 
 .competitive-content-container {
     margin: 40px auto 100px;
+    border-bottom: 2px solid lightgray;
 }
 
 .competitive-content {
     position: relative;
     padding: 0 20px 20px 50px;
     margin-top: 10px;
-    border-bottom: 2px solid lightgray;
+    /* border-bottom: 2px solid lightgray; */
 }
 
 .competitive-content img {
@@ -394,11 +400,12 @@ header#header .navbar-default .navbar-nav>li>a {
 }
 
 .integration-content-header {
-    margin-top: 35px;
+    margin: 30px 0 20px;
+    font-size: 30px;
 }
 
 .integration-text {
-    width: 60%;
+    width: 65%;
 }
 
 .integration-text-normal {
@@ -435,7 +442,7 @@ header#header .navbar-default .navbar-nav>li>a {
 
 .integration-footer-header {
     font-size: 12px;
-    margin: 10px 0 0 10px;
+    margin: 5px 0 0 10px;
 }
 
 .integration-footer-text {
@@ -456,6 +463,7 @@ header#header .navbar-default .navbar-nav>li>a {
     width: 80%;
     margin: auto;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .increasing-header {
@@ -476,7 +484,6 @@ header#header .navbar-default .navbar-nav>li>a {
     border-color: #fc6f6f;
     font-size: 10px;
     padding: 5px;
-    margin-bottom: 50px;
 }
 
 .increasing-image img {
@@ -524,8 +531,353 @@ header#header .navbar-default .navbar-nav>li>a {
 
 .service {
     opacity: 30%;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
+
 .policy>:first-child {
     margin-right: 10px;
+}
+
+@media (max-width:1200px) {
+    .title-container {
+        width: 65%;
+    }
+
+    .title-content,
+    .analyze-content p {
+        width: 100%;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+
+    .analyze-content p {
+        margin-bottom: 10px;
+    }
+
+    .data-sources {
+        margin: 10px 0;
+    }
+
+    .find-content {
+        padding: 0;
+    }
+
+    .integration-content-header {
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    .integration-text {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:992px) {
+    .title-container {
+        width: 85%;
+        margin: 50px auto 0;
+    }
+
+    .header-search {
+        width: 50%;
+    }
+
+    .header-user {
+        margin: 50px auto 0;
+    }
+
+    #main {
+        padding-top: 50px;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+
+    .analyze-content {
+        padding: 0px 20px;
+    }
+
+    .analyze-content p {
+        font-size: 15px;
+    }
+
+    .title-content {
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .title-content-line {
+        bottom: -20px;
+    }
+
+    .external h3,
+    .company h3 {
+        font-size: 25px;
+    }
+
+    .external p,
+    .company p {
+        font-size: 13px;
+    }
+
+    .find-content p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .tips-content p {
+        padding-right: 5px;
+        font-size: 14px;
+    }
+
+    .main-line {
+        margin: 50px 0;
+    }
+
+    .main-line img {
+        width: 100%;
+    }
+
+    .competitive-content-container {
+        margin-bottom: 50px;
+        border-bottom: none;
+    }
+
+    .competitive-header {
+        font-size: 25px;
+    }
+
+    .competitive-content {
+        border-bottom: 2px solid lightgray;
+    }
+
+    .main-integration {
+        padding: 50px 0;
+    }
+
+    .integration-content-header {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .integration-content-line {
+        margin: 10px 0;
+    }
+
+    .main-increasing {
+        padding: 50px 0;
+    }
+
+    .increasing-content {
+        padding-bottom: 30px;
+    }
+
+    .increasing-header {
+        font-size: 25px;
+    }
+
+    .increasing-text {
+        margin: 10px 0 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-container {
+        width: 100%;
+    }
+
+    .title-container {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .header-search {
+        width: 90%;
+    }
+
+    .header-user {
+        width: 230px;
+        margin: 30px auto 0;
+    }
+
+    #main {
+        padding-top: 50px;
+    }
+
+    .title-content {
+        font-size: 25px;
+    }
+
+    .title-content-line {
+        bottom: -20px;
+    }
+
+    .analyze-content p {
+        font-size: 14px;
+    }
+
+    .external h3,
+    .company h3 {
+        font-size: 20px;
+    }
+
+    .external p,
+    .company p {
+        font-size: 12px;
+    }
+
+    .find-content {
+        padding: 0 25px;
+    }
+
+    .competitive-content-container {
+        margin-bottom: 30px;
+        border-bottom: none;
+    }
+
+    .competitive-content {
+        border-bottom: 2px solid lightgray;
+    }
+
+    .competitive-header {
+        font-size: 25px;
+    }
+
+    .find-content p {
+        font-size: 14px;
+    }
+
+    .main-integration {
+        padding: 30px 0;
+    }
+
+    .integration-content-header {
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .integration-content-line {
+        margin: 10px 0;
+    }
+
+    .main-line {
+        margin: 30px 0;
+    }
+
+    .main-increasing {
+        padding: 30px 0;
+    }
+
+    .increasing-content {
+        padding-bottom: 30px;
+    }
+
+    .increasing-text {
+        margin: 10px 0 15px;
+    }
+
+    #footer {
+        padding: 20px;
+    }
+
+    .footer-content span,
+    .policy span {
+        font-size: 10px;
+    }
+
+    .service img {
+        width: 15px;
+    }
+
+    .footer-content span {
+        display: block;
+        width: 100%;
+    }
+
+    #footer .policy span {
+        margin-right: 0;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width:425px) {
+    .header-title {
+        font-size: 25px;
+    }
+
+    .header-content {
+        font-size: 14px;
+    }
+
+    .header-search {
+        width: 100%;
+    }
+
+    .user-left {
+        left: -30px;
+    }
+
+    .user-right {
+        right: -25px;
+    }
+
+    .intagration-image {
+        padding-top: 20px;
+    }
+
+    .main-line {
+        margin: 10px 0;
+    }
+
+    .title-content {
+        font-size: 20px;
+    }
+
+    .analyze-content {
+        padding: 20px 20px 0;
+    }
+
+    .find-content {
+        padding: 10px 20px 20px;
+    }
+
+    .tips-content {
+        padding: 20px;
+    }
+
+    .competitive-header-container {
+        width: 90%;
+    }
+
+    .competitive-header {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-content-container {
+        height: 100%;
+    }
+
+    .footer-content {
+        display: block;
+        padding: 10px 0;
+        width: 65%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .service img {
+        width: 30px;
+    }
+
+
+
 }
